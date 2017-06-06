@@ -28,8 +28,19 @@ namespace Reverse_Swype
 
         private void button1_Click(object sender, EventArgs e)
         {
+            char[] word = wordBox.Text.ToUpper().ToArray<char>();
+            List<Point> pointsWord = new List<Point>();
+            foreach (char charWord in word)
+            {
+                pointsWord.Add(keyboardDictionary[charWord]);                
+            }
             //swypeImage.Paint += new System.Windows.Forms.PaintEventHandler(this.swypeImage_Paint);
             //this.Controls.Add(swypeImage);
+            Point[] pointsWordArray = pointsWord.ToArray();
+            foreach (Point pointArray in pointsWordArray)
+            {
+                Console.WriteLine(pointArray.ToString());
+            }
         }
 
         public Form1()

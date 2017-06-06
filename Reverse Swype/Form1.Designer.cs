@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.wordBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.listKeyboards = new System.Windows.Forms.ComboBox();
             this.swypeImage = new System.Windows.Forms.PictureBox();
@@ -53,12 +53,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Word to translate:";
             // 
-            // textBox1
+            // wordBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(106, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 20);
-            this.textBox1.TabIndex = 1;
+            this.wordBox.Location = new System.Drawing.Point(106, 27);
+            this.wordBox.Name = "wordBox";
+            this.wordBox.Size = new System.Drawing.Size(153, 20);
+            this.wordBox.TabIndex = 1;
             // 
             // label2
             // 
@@ -90,7 +90,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.wordBox);
             this.groupBox1.Controls.Add(this.listKeyboards);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -162,7 +162,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox wordBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox listKeyboards;
         private System.Windows.Forms.PictureBox swypeImage;
