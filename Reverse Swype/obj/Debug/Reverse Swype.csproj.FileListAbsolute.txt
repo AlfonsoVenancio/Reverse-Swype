@@ -1,0 +1,9 @@
+c:\users\alfonso\documents\visual studio 2017\Projects\Reverse Swype\Reverse Swype\bin\Debug\Reverse Swype.exe.config
+c:\users\alfonso\documents\visual studio 2017\Projects\Reverse Swype\Reverse Swype\bin\Debug\Reverse Swype.exe
+c:\users\alfonso\documents\visual studio 2017\Projects\Reverse Swype\Reverse Swype\bin\Debug\Reverse Swype.pdb
+c:\users\alfonso\documents\visual studio 2017\Projects\Reverse Swype\Reverse Swype\obj\Debug\Reverse Swype.csprojResolveAssemblyReference.cache
+c:\users\alfonso\documents\visual studio 2017\Projects\Reverse Swype\Reverse Swype\obj\Debug\Reverse_Swype.Form1.resources
+c:\users\alfonso\documents\visual studio 2017\Projects\Reverse Swype\Reverse Swype\obj\Debug\Reverse_Swype.Properties.Resources.resources
+c:\users\alfonso\documents\visual studio 2017\Projects\Reverse Swype\Reverse Swype\obj\Debug\Reverse Swype.csproj.GenerateResource.Cache
+c:\users\alfonso\documents\visual studio 2017\Projects\Reverse Swype\Reverse Swype\obj\Debug\Reverse Swype.exe
+c:\users\alfonso\documents\visual studio 2017\Projects\Reverse Swype\Reverse Swype\obj\Debug\Reverse Swype.pdb
