@@ -80,12 +80,12 @@
             // 
             // swypeImage
             // 
-            this.swypeImage.Location = new System.Drawing.Point(12, 118);
+            this.swypeImage.Image = ((System.Drawing.Image)(resources.GetObject("swypeImage.Image")));
+            this.swypeImage.Location = new System.Drawing.Point(7, 174);
             this.swypeImage.Name = "swypeImage";
             this.swypeImage.Size = new System.Drawing.Size(462, 190);
             this.swypeImage.TabIndex = 4;
             this.swypeImage.TabStop = false;
-            this.swypeImage.Paint += new System.Windows.Forms.PaintEventHandler(this.swypeImage_Paint);
             // 
             // groupBox1
             // 
@@ -95,7 +95,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(281, 100);
+            this.groupBox1.Size = new System.Drawing.Size(281, 102);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Input";
@@ -141,7 +141,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 319);
+            this.ClientSize = new System.Drawing.Size(481, 376);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

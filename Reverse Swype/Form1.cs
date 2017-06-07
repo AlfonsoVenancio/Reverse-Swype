@@ -18,34 +18,33 @@ namespace Reverse_Swype
         int heightChar = 0, widthChar = 0;
         int verticalIdentation = 0, horizontalIdentation = 0;
 
-        private void swypeImage_Paint(object sender, PaintEventArgs e)
-        {
-            //Graphics strokeSwype = e.Graphics;
-            //Pen penSwype = new Pen(Color.AliceBlue);
-            //Brush brushSwype = new SolidBrush(Color.Red);
-            //strokeSwype.DrawLine(penSwype, 2, 2, 400, 450);
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
+            //swypeImage.Image = new Bitmap(swypeImage.Width, swypeImage.Height);
             char[] word = wordBox.Text.ToUpper().ToArray<char>();
             List<Point> pointsWord = new List<Point>();
             foreach (char charWord in word)
             {
                 pointsWord.Add(keyboardDictionary[charWord]);                
             }
-            //swypeImage.Paint += new System.Windows.Forms.PaintEventHandler(this.swypeImage_Paint);
-            //this.Controls.Add(swypeImage);
+
             Point[] pointsWordArray = pointsWord.ToArray();
             foreach (Point pointArray in pointsWordArray)
             {
                 Console.WriteLine(pointArray.ToString());
             }
+            using (var g = Graphics.FromImage(swypeImage.Image))
+            {
+                g.DrawLines(Pens.Blue, pointsWordArray);
+                swypeImage.Refresh();
+            }
+            
         }
 
         public Form1()
         {
             InitializeComponent();
+            //swypeImage.Image = new Bitmap(swypeImage.Width,swypeImage.Height);
         }
 
         private void listKeyboards_SelectedIndexChanged(object sender, EventArgs e)
@@ -67,7 +66,6 @@ namespace Reverse_Swype
             foreach (string line in lines)
             {
                 horizontalPosition = horizontalIdentation;
-                //Console.WriteLine(verticalPosition.ToString());
                 foreach (char character in line)
                 {
                     if (character == '_')
