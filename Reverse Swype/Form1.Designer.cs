@@ -80,7 +80,6 @@
             // 
             // swypeImage
             // 
-            this.swypeImage.Image = ((System.Drawing.Image)(resources.GetObject("swypeImage.Image")));
             this.swypeImage.Location = new System.Drawing.Point(7, 174);
             this.swypeImage.Name = "swypeImage";
             this.swypeImage.Size = new System.Drawing.Size(462, 190);

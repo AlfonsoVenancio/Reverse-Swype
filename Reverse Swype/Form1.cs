@@ -35,6 +35,7 @@ namespace Reverse_Swype
             }
             using (var g = Graphics.FromImage(swypeImage.Image))
             {
+                g.FillEllipse(Brushes.Red, pointsWordArray[0].X-5, pointsWordArray[0].Y-5,10,10);
                 g.DrawLines(Pens.Blue, pointsWordArray);
                 swypeImage.Refresh();
             }
@@ -51,6 +52,7 @@ namespace Reverse_Swype
         {
             string layoutFileName = listKeyboards.SelectedItem.ToString();
             string fullLayoutPath = directoryName+"\\"+layoutFileName+".txt";
+            swypeImage.ImageLocation = directoryName + "\\" + layoutFileName + ".png";
             string[] lines = System.IO.File.ReadAllLines(fullLayoutPath);
             foreach (string line in lines)
             {
@@ -102,7 +104,9 @@ namespace Reverse_Swype
             List<string> listFileNames = new List<string>();
             foreach (string fileName in fileNames)
             {
-                listFileNames.Add(fileName.Replace(directoryName+"\\", "").Replace(".txt",""));
+                string fileNameClear = fileName.Replace(directoryName + "\\", "").Replace(".txt", "").Replace(".png", "");
+                if (!listFileNames.Contains(fileNameClear))
+                    listFileNames.Add(fileNameClear);
             }
             string[] fileNamesClear = listFileNames.ToArray();
             this.listKeyboards.Items.AddRange(fileNamesClear);
